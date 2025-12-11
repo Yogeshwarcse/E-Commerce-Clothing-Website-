@@ -1,0 +1,151 @@
+.productsPage {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.productsPage__left {
+    flex: 0.2;
+    min-width: 200px;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.productsPage__title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.productsPage__filterSection {
+    margin-bottom: 20px;
+}
+
+.productsPage__filterHeader {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.productsPage__filterItem {
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #111;
+}
+
+.productsPage__filterItem:hover {
+    color: var(--amz-orange-hover);
+}
+
+.productsPage__right {
+    flex: 0.8;
+}
+
+.productsPage__resultsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.productsPage__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Product Card */
+.productCard {
+    background-color: white;
+    width: 280px;
+    /* Wider card */
+    border: 1px solid #eee;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.productCard:hover {
+    border-color: #ddd;
+}
+
+.productCard__image {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.productCard__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.productCard__title {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #111;
+    line-height: 1.3;
+    max-height: 42px;
+    /* 2 lines */
+    overflow: hidden;
+}
+
+.productCard__title:hover {
+    color: #c7511f;
+}
+
+.productCard__rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.productCard__stars {
+    color: var(--amz-orange);
+    margin-right: 5px;
+}
+
+.productCard__count {
+    color: var(--amz-blue-link);
+    font-size: 12px;
+}
+
+.productCard__price {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.productCard__price sup {
+    font-size: 12px;
+    top: -0.5em;
+}
+
+.productCard__prime {
+    color: #555;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.productCard__button {
+    background-color: #ffd814;
+    border: 1px solid #fcd200;
+    border-radius: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    width: 100px;
+    margin-top: auto;
+}
+
+.productCard__button:hover {
+    background-color: #f7ca00;
+}

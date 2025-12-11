@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --amz-dark-blue: #131921;
+    --amz-light-blue: #232f3e;
+    --amz-orange: #febd69;
+    --amz-orange-hover: #f3a847;
+    --amz-blue-link: #007185;
+    --amz-text: #111;
+    --amz-text-light: #555;
+    --amz-bg-gray: #eaeded;
+    --amz-white: #ffffff;
+    --font-main: "Amazon Ember", Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--amz-bg-gray);
+    color: var(--amz-text);
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn-primary {
+    background-color: var(--amz-orange);
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #111;
+}
+
+.btn-primary:hover {
+    background-color: var(--amz-orange-hover);
+}
